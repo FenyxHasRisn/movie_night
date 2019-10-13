@@ -1,0 +1,11 @@
+body {
+    background-color: azure;
+}
+.input {
+    background-color: '#f4f4f4';
+    width: 500px;
+    height: 24px;
+}
+.title {
+    font-weight: bolder;
+}

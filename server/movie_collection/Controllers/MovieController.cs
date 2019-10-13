@@ -16,21 +16,21 @@ namespace movie_collection.Controllers
             _movieService = movieService;
         }
 
-        [HttpGet]
-        public ActionResult<List<Title>> Get() =>
-            _movieService.Get();
+        // [HttpGet]
+        // public ActionResult<List<Title>> Get() =>
+        //     _movieService.Get();
 
-        [HttpGet("{id}")]
-        public ActionResult<Title> Get(int id)
-        {
-            var movie = _movieService.Get(id);
+        // [HttpGet("{id}")]
+        // public ActionResult<Title> Get(int id)
+        // {
+        //     var movie = _movieService.Get(id);
 
-            if (movie == null)
-            {
-                return NotFound();
-            }
-            return Ok(movie);
-        }
+        //     if (movie == null)
+        //     {
+        //         return NotFound();
+        //     }
+        //     return Ok(movie);
+        // }
 
         [HttpPost]
         public ActionResult<List<Title>> Post([FromBody] string title)
